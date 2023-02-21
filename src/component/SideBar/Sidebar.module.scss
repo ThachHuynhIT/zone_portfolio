@@ -1,0 +1,28 @@
+.sidebar {
+    display: flex;
+    position: relative;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-around;
+    height: 090vh;
+}
+
+.sidebar_logo {
+    padding: 0px 50px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.my_img img {
+    flex: 2;
+    float: left;
+    justify-content: space-around;
+    height: calc(100vh - 100px);
+}
+
+.sidebar_text {
+    font-size: 40px;
+    flex: 1;
+    font-family: 'Roboto Mono', monospace;
+}

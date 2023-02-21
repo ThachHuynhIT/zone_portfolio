@@ -1,0 +1,208 @@
+#technology {
+    margin-top: 10vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.te_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 800px;
+}
+
+.te_ul .te_li {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.te_li .te_base1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 0, 0);
+    border-left: 8px solid transparent;
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+    animation: spin 8s linear infinite;
+}
+
+.te_li .te_base1::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+.te_li .te_base2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #254BDD;
+    border-left: 8px solid transparent;
+    filter: drop-shadow(0 0 10px #254BDD);
+    animation: spin 8s linear infinite;
+}
+
+.te_li .te_base2::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: #254BDD;
+}
+
+.te_li .te_base3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #E8D44D;
+    border-left: 8px solid transparent;
+    filter: drop-shadow(0 0 10px #E8D44D);
+    animation: spin 8s linear infinite;
+}
+
+.te_li .te_base3::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: #E8D44D;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(60deg) rotateZ(0);
+    }
+
+    100% {
+        transform: rotateX(60deg) rotateZ(-360deg);
+    }
+}
+
+li .te_base,
+li .te_title,
+li .te_icon {
+    position: absolute;
+    color: #b5b5b5;
+    transform: rotateX(60deg) rotateX(-45deg);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.te_title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotateX(30deg) skew(-24deg) translateY(0px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.te_icon {
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+
+// base 1
+.te_base1:hover {
+    filter: drop-shadow(0 0 10px) #ff0000;
+    animation-play-state: paused;
+}
+
+.te_base1:hover+.te_title+.te_icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: #ff0000;
+    filter: drop-shadow(0 0 3px #ff0000);
+    animation: wave 1s ease-in-out infinite;
+}
+
+.te_base1:hover+.te_title {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    color: #ff0000;
+    text-shadow: 0 0 3px #ff0000;
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+// base 2
+.te_base2:hover {
+    filter: drop-shadow(0 0 10px) #254BDD;
+    animation-play-state: paused;
+}
+
+.te_base2:hover+.te_title+.te_icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: #254BDD;
+    filter: drop-shadow(0 0 3px #254BDD);
+    animation: wave 1s ease-in-out infinite;
+}
+
+.te_base2:hover+.te_title {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    color: #254BDD;
+    text-shadow: 0 0 3px #254BDD;
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+// base 3
+.te_base3:hover {
+    filter: drop-shadow(0 0 10px) #E8D44D;
+    animation-play-state: paused;
+}
+
+.te_base3:hover+.te_title+.te_icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: #E8D44D;
+    filter: drop-shadow(0 0 3px #E8D44D);
+    animation: wave 1s ease-in-out infinite;
+}
+
+.te_base3:hover+.te_title {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    color: #E8D44D;
+    text-shadow: 0 0 3px #E8D44D;
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+
+
+
+@keyframes wave {
+
+    0%,
+    100% {
+        margin-bottom: 0;
+    }
+
+    50% {
+        margin-bottom: 15px;
+    }
+}
