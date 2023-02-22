@@ -4,9 +4,9 @@ let cx = classNames.bind(styles);
 
 function AboutMe() {
   return (
-    <div className={cx("about_me")}>
-      <div>About me</div>
-      <div>
+    <div id={cx("about_me")}>
+      <div className={cx("am_heading")}> About me </div>
+      <div className={cx("am_content")}>
         I'm Thach. Currently a 4th year student majoring in information
         technology. Currently I'm a front-end developer, I'm aiming to become a
         full-stack developer and beyond. I have experience using JavaScript and
@@ -14,7 +14,7 @@ function AboutMe() {
         can be flexible in many positions in the group. If you want to see my cv
         you can download it below.
       </div>
-      <button>Download my CV here</button>
+      <button>Download CV</button>
     </div>
   );
 }

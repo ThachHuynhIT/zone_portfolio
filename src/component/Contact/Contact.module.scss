@@ -1,0 +1,82 @@
+#contact {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+}
+
+.ct_icons {
+    width: 35%;
+    display: flex;
+    column-gap: 25px;
+}
+
+.ct_icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+
+.ct_icon:hover {
+    outline-offset: 4px;
+}
+
+.ct_icon:hover div {
+    animation: shake .25s;
+}
+
+.icon_instagram:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76;
+}
+
+.icon_fb:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
+.icon_linkedin:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    background-color: #0A66C2;
+    outline-color: #0A66C2;
+}
+
+.icon_github:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    background-color: #c8c8c8a0;
+    outline-color: #c8c8c8a0;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+.ct_form {
+    width: 65%;
+    text-align: right;
+    float: right;
+}

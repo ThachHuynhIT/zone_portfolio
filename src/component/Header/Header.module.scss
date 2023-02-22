@@ -1,19 +1,32 @@
 .header {
-    display: flex;
     padding: 15px 0px;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.5;
     height: auto;
     width: 100%;
-    align-items: center;
 }
 
 .header a {
-    float: left;
     color: #000000;
-    padding: 0px 60px 0px 10px;
+    margin: 0px 60px 0px 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 450;
-    font-family: 'Roboto Mono', monospace;
+}
+
+.header a:hover {
+    color: aliceblue;
+    animation: fadeIN 1s;
+    border-bottom: 8px solid #310889;
+}
+
+@keyframes fadeIN {
+
+    0% {
+        opacity: 10%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }

@@ -21,8 +21,28 @@
     height: calc(100vh - 100px);
 }
 
+.sb_t {
+    flex: 1;
+}
+
 .sidebar_text {
     font-size: 40px;
-    flex: 1;
-    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    // border-right: 2px solid #000;
+    animation: typing 3s steps(52), blink step-end 0, 5s infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+
 }
