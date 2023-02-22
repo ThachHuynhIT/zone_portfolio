@@ -8,9 +8,9 @@ let cx = classNames.bind(style);
 function Sidebar() {
   return (
     <div className={cx("sidebar")}>
-      <div className={cx("sb_t")}>
-        <div className={cx("sidebar_text")}>My name is Thach</div>
-        <div className={cx("sidebar_text")}>I'm web developer</div>
+      <div className={cx("typed-animation")}>
+        <div className={cx("sb_text")}>My name is Thach</div>
+        <div className={cx("typed-out")}>I'm web developer</div>
       </div>
       <div className={cx("sidebar_logo")}>
         <img src={HT} alt="Thach"></img>

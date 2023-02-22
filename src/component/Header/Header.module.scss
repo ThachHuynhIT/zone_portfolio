@@ -1,21 +1,38 @@
-.header {
+#header {
+    display: flex;
+    justify-content: space-around;
     padding: 15px 0px;
     font-size: 20px;
-    line-height: 1.5;
+    // line-height: 1.5;
     height: auto;
     width: 100%;
 }
 
-.header a {
+#header ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header .header_link {
+    height: 50px;
+    display: block;
+    list-style: none;
     color: #000000;
-    margin: 0px 60px 0px 10px;
     text-align: center;
     font-size: 30px;
     font-weight: 450;
+
 }
 
-.header a:hover {
-    color: aliceblue;
+#header .header_btn {
+    list-style: none;
+}
+
+#header .header_link:hover {
+    color: rgb(52, 102, 145);
     animation: fadeIN 1s;
     border-bottom: 8px solid #310889;
 }

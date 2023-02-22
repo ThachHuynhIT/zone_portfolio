@@ -6,13 +6,15 @@ import Contact from "../component/Contact";
 
 function HomePage() {
   return (
-    <div className="container">
+    <>
       <Header></Header>
-      <Sidebar></Sidebar>
-      <AboutMe></AboutMe>
-      <Technology></Technology>
-      <Contact></Contact>
-    </div>
+      <div className="container">
+        <Sidebar></Sidebar>
+        <AboutMe></AboutMe>
+        <Technology></Technology>
+        <Contact></Contact>
+      </div>
+    </>
   );
 }
 
