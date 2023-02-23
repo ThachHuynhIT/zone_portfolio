@@ -12,13 +12,13 @@ function Header() {
           <a href="#">Home</a>
         </li>
         <li className={cx("header_link")}>
-          <a href="#">About me</a>
+          <a href="#AboutMe_about_me__RJukO">About me</a>
         </li>
         <li className={cx("header_link")}>
-          <a href="#">Product</a>
+          <a href="#ProjectLatest_project_latest__daXNI">Product</a>
         </li>
         <li className={cx("header_link")}>
-          <a href="#Technology_technology__U9r1I">Contact</a>
+          <a href="#Contact_contact__fdJDP">Contact</a>
         </li>
         <li className={cx("header_btn")}>
           <DarkMode></DarkMode>
