@@ -1,6 +1,7 @@
 import styles from "./Contact.module.scss";
 import classNames from "classnames/bind";
 import { BsInstagram, BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
+
 import FormContact from "../FormContact";
 
 let cx = classNames.bind(styles);
@@ -18,7 +19,6 @@ function Contact() {
             <BsInstagram></BsInstagram>
           </div>
         </a>
-
         <a
           target="_blank"
           href="https://www.facebook.com/Thach.Huynh.ZoneNop/"
@@ -28,7 +28,6 @@ function Contact() {
             <BsFacebook></BsFacebook>
           </div>
         </a>
-
         <a
           target="_blank"
           href="https://www.linkedin.com/in/huynh-thach-web-dev/"
@@ -38,13 +37,14 @@ function Contact() {
             <BsLinkedin></BsLinkedin>
           </div>
         </a>
-
         <a
           target="_blank"
           href="https://github.com/ThachHuynhIT"
           className={cx("ct_icon", "icon_github")}
         >
-          <BsGithub></BsGithub>
+          <div>
+            <BsGithub></BsGithub>
+          </div>
         </a>
       </div>
       <div className={cx("ct_form")}>

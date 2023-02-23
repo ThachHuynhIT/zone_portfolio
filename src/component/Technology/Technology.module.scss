@@ -1,9 +1,21 @@
 #technology {
     margin-top: 10vh;
-    height: 30vh;
+    height: 320px;
+
+    border-radius: 50px;
+    background: #234340;
+    box-shadow: 20px 20px 60px #274a46,
+        -20px -20px 60px #366762;
+
+    padding-left: 15px;
+}
+
+#technology .te_body {
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .te_ul {
@@ -11,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    width: 800px;
+    width: 80%;
 }
 
 .te_ul .te_li {
@@ -121,7 +133,7 @@ li .te_icon {
 .te_icon {
     display: grid;
     place-items: center;
-    font-size: 80px;
+    font-size: 50px;
     height: 100%;
     pointer-events: none;
 }
@@ -137,6 +149,7 @@ li .te_icon {
     color: #ff0000;
     filter: drop-shadow(0 0 3px #ff0000);
     animation: wave 1s ease-in-out infinite;
+    font-size: 80px;
 }
 
 .te_base1:hover+.te_title {
@@ -159,6 +172,8 @@ li .te_icon {
     color: #254BDD;
     filter: drop-shadow(0 0 3px #254BDD);
     animation: wave 1s ease-in-out infinite;
+    font-size: 80px;
+
 }
 
 .te_base2:hover+.te_title {
@@ -181,6 +196,8 @@ li .te_icon {
     color: #E8D44D;
     filter: drop-shadow(0 0 3px #E8D44D);
     animation: wave 1s ease-in-out infinite;
+    font-size: 80px;
+
 }
 
 .te_base3:hover+.te_title {

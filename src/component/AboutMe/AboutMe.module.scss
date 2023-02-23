@@ -1,16 +1,23 @@
 #about_me {
+    border-radius: 50px;
+    background: #234340;
+    box-shadow: 20px 20px 60px #274a46,
+        -20px -20px 60px #366762;
     margin-top: 10vh;
-    height: 100%;
-    // background-color: aquamarine;
+    height: 400px;
+    color: #ffffff;
+    padding: 15px;
 }
 
 // Head
 .am_heading {
     font-size: 30px;
-    padding-bottom: 20px;
+    padding: 10px 20px;
 }
 
-.am_content {
+.am_content,
+.am_body {
+    padding: 10px 20px;
     font-size: 20px;
 }
 

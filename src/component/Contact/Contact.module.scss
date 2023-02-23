@@ -1,5 +1,6 @@
 #contact {
     display: flex;
+    margin-top: 10vh;
     width: 100%;
 }
 
@@ -7,6 +8,9 @@
     width: 35%;
     display: flex;
     column-gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
 }
 
 .ct_icon {
@@ -26,6 +30,10 @@
 
 .ct_icon:hover {
     outline-offset: 4px;
+}
+
+.ct_icon div {
+    display: flex;
 }
 
 .ct_icon:hover div {
