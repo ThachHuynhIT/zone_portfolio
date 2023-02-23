@@ -1,0 +1,31 @@
+#card_pj {
+    display: flex;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 30px;
+}
+
+#card_pj .card_img {
+    background-color: aquamarine;
+    border-radius: 30px;
+
+    height: 70%;
+}
+
+#card_pj .card_header {
+    background-color: rgb(218, 202, 202);
+    border-radius: 30px;
+
+    height: 10%;
+}
+
+#card_pj .card_content {
+    background-color: rgb(255, 0, 0);
+    border-radius: 30px;
+
+    height: 20%;
+}

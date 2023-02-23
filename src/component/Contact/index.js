@@ -2,7 +2,7 @@ import styles from "./Contact.module.scss";
 import classNames from "classnames/bind";
 import { BsInstagram, BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 
-import FormContact from "../FormContact";
+import FormContact from "../ContactForm";
 
 let cx = classNames.bind(styles);
 
