@@ -6,9 +6,11 @@ let cx = classNames.bind(styles);
 function CardProject(props) {
   return (
     <div id={cx("card_pj")}>
-      <div className={cx("card_img")}>{props.imgUrl}</div>
-      <div className={cx("card_header")}>{props.header}</div>
+      <div className={cx("card_header")}>{props.name}</div>
       <div className={cx("card_content")}>{props.content}</div>
+      <div className={cx("card_img")}>
+        <img src={props.img}></img>
+      </div>
     </div>
   );
 }
