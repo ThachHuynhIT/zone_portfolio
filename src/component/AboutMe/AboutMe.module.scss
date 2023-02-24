@@ -4,7 +4,7 @@
     box-shadow: 20px 20px 60px #274a46,
         -20px -20px 60px #366762;
     margin-top: 10vh;
-    height: 400px;
+    min-height: 400px;
     color: #ffffff;
     padding: 15px;
 }
@@ -23,7 +23,7 @@
 
 // Button
 #about_me button {
-    margin-top: 20px;
+    margin: 20px;
     text-decoration: none;
     position: absolute;
     border: none;
@@ -79,6 +79,6 @@
 
 @media screen and (max-width: 1205px) {
     #about_me {
-        height: 450px;
+        min-height: 450px;
     }
 }

@@ -88,3 +88,9 @@
     // float: right;
     // height: 500px;
 }
+
+@media screen and (max-width: 600px) {
+    .ct_icons {
+        flex-wrap: wrap
+    }
+}

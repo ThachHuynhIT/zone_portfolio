@@ -223,3 +223,9 @@ li .te_icon {
         margin-bottom: 15px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    ul li span {
+        display: none;
+    }
+}

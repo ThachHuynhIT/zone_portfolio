@@ -19,6 +19,7 @@
     float: left;
     justify-content: space-around;
     height: calc(100vh - 100px);
+    transition: .5s ease;
 }
 
 .sb_text {
@@ -62,5 +63,36 @@
 
     50% {
         border-color: #fff;
+    }
+}
+
+@media screen and (max-width: 1205px) {
+    .my_img img {
+        display: none;
+        transition: .5s ease;
+    }
+
+    .sidebar_logo {
+        left: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .sb_text {
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .typed-out {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .sb_text {
+        font-size: 30px;
     }
 }
