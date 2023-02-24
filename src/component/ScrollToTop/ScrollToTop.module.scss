@@ -1,0 +1,17 @@
+.scroll_btn {
+    position: fixed;
+    width: 100%;
+    left: 95%;
+    bottom: 50px;
+    height: 20px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: green;
+}
+
+@media screen and (max-width: 1205px) {
+    .scroll_btn {
+        display: none;
+    }
+}

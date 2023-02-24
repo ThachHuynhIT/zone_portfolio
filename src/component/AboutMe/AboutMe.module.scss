@@ -76,3 +76,9 @@
 #about_me button:active {
     background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
+
+@media screen and (max-width: 1205px) {
+    #about_me {
+        height: 450px;
+    }
+}

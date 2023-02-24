@@ -1,5 +1,5 @@
 import style from "./Header.module.scss";
-import DarkMode from "../ButtonDarkMode";
+// import DarkMode from "../ButtonDarkMode";
 import classNames from "classnames/bind";
 
 let cx = classNames.bind(style);
@@ -20,9 +20,9 @@ function Header() {
         <li className={cx("header_link")}>
           <a href="#Contact_contact__fdJDP">Contact</a>
         </li>
-        <li className={cx("header_btn")}>
+        {/* <li className={cx("header_btn")}>
           <DarkMode></DarkMode>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
